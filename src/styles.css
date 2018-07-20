@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+html, body { height: 100%; }
+body { margin: 0; font-family: 'Roboto', sans-serif; }
+
+/* MATERIALS */
+
+/* FORM */
+.mat-form-field {
+    width: 100%;
+}
+.mat-form-field-label {
+   font-size: 13px !important;
+}
+
+/* TABLE */
+.mat-table {
+   width: 100%;
+}
+.mat-column-status {
+   flex: 0 0 100px !important;
+   width: 100px;
+}
+.mat-column-action {
+   flex: 0 0 50px !important;
+   width: 50px;
+}
