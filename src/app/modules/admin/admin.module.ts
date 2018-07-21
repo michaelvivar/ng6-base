@@ -14,9 +14,10 @@ import { LoginFormComponent } from '@components/login-form/login-form.component'
     RouterModule.forChild([
       {
         path: '', component: AdminLayout, children: [
-          { path: 'login', component: LoginPage }
+
         ]
-      }
+      },
+      { path: 'login', component: LoginPage }
     ])
   ],
   declarations: [
