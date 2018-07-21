@@ -1,13 +1,16 @@
 import { State, StateContext, Action } from '@ngxs/store';
 import { AppStateModel } from '@store/states/app.state';
-import { AdminPageTitle } from '../actions/page.actions';
+import { AdminPageTitle } from '../actions/admin-page.actions';
 
 interface AdminStateModel extends AppStateModel {
    title: string;
 }
 
 @State<AdminStateModel>({
-   name: 'admin'
+   name: 'admin',
+   defaults: {
+      title: 'Admin'
+   }
 })
 export class AdminState {
 

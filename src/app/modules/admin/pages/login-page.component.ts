@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Page } from '@components/page-base.component';
-import { AdminPageTitle } from '../store/actions/page.actions';
+import { AdminPageTitle } from '../store/actions/admin-page.actions';
 
 @Component({
    template: '<div class="form-theme"><login-form admin="true"></login-form></div>'
