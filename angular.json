@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "shopping-cart-v2": {
+    "ng6-base": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/shopping-cart-v2",
+            "outputPath": "dist/ng6-base",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -53,18 +53,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "shopping-cart-v2:build"
+            "browserTarget": "ng6-base:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "shopping-cart-v2:build:production"
+              "browserTarget": "ng6-base:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "shopping-cart-v2:build"
+            "browserTarget": "ng6-base:build"
           }
         },
         "test": {
@@ -101,7 +101,7 @@
         }
       }
     },
-    "shopping-cart-v2-e2e": {
+    "ng6-base-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -109,11 +109,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "shopping-cart-v2:serve"
+            "devServerTarget": "ng6-base:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "shopping-cart-v2:serve:production"
+              "devServerTarget": "ng6-base:serve:production"
             }
           }
         },
@@ -129,5 +129,5 @@
       }
     }
   },
-  "defaultProject": "shopping-cart-v2"
+  "defaultProject": "ng6-base"
 }
